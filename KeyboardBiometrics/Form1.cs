@@ -19,12 +19,14 @@ namespace KeyboardBiometrics
 
         private void savePatternButton_Click(object sender, EventArgs e)
         {
-
+            savePatternPanel.Visible = true;
+            validatePanel.Visible = false;
         }
 
         private void validatePatternButton_Click(object sender, EventArgs e)
         {
-
+            savePatternPanel.Visible = false;
+            validatePanel.Visible = true;
         }
     }
 }
