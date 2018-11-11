@@ -31,6 +31,8 @@
             this.mainPanel = new System.Windows.Forms.Panel();
             this.savePatternButton = new System.Windows.Forms.Button();
             this.validatePatternButton = new System.Windows.Forms.Button();
+            this.savePatternPanel = new System.Windows.Forms.Panel();
+            this.validatePanel = new System.Windows.Forms.Panel();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,11 +69,33 @@
             this.validatePatternButton.UseVisualStyleBackColor = true;
             this.validatePatternButton.Click += new System.EventHandler(this.validatePatternButton_Click);
             // 
+            // savePatternPanel
+            // 
+            this.savePatternPanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.savePatternPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.savePatternPanel.Location = new System.Drawing.Point(0, 0);
+            this.savePatternPanel.Name = "savePatternPanel";
+            this.savePatternPanel.Size = new System.Drawing.Size(800, 450);
+            this.savePatternPanel.TabIndex = 2;
+            this.savePatternPanel.Visible = false;
+            // 
+            // validatePanel
+            // 
+            this.validatePanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.validatePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.validatePanel.Location = new System.Drawing.Point(0, 0);
+            this.validatePanel.Name = "validatePanel";
+            this.validatePanel.Size = new System.Drawing.Size(800, 450);
+            this.validatePanel.TabIndex = 3;
+            this.validatePanel.Visible = false;
+            // 
             // KeyboardBiometrics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.savePatternPanel);
+            this.Controls.Add(this.validatePanel);
             this.Controls.Add(this.mainPanel);
             this.Name = "KeyboardBiometrics";
             this.Text = "KeyboardsBiometrics";
@@ -85,6 +109,8 @@
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Button validatePatternButton;
         private System.Windows.Forms.Button savePatternButton;
+        private System.Windows.Forms.Panel savePatternPanel;
+        private System.Windows.Forms.Panel validatePanel;
     }
 }
 
