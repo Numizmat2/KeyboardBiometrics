@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace KeyboardBiometrics
 {
-    public partial class Form1 : Form
+    public partial class KeyboardBiometrics : Form
     {
-        public Form1()
+        public KeyboardBiometrics()
         {
             InitializeComponent();
+        }
+
+        private void savePatternButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void validatePatternButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
