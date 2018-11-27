@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace KeyboardBiometrics
@@ -17,16 +10,18 @@ namespace KeyboardBiometrics
             InitializeComponent();
         }
 
-        private void savePatternButton_Click(object sender, EventArgs e)
+        private void loginButton_Click(object sender, EventArgs e)
         {
-            savePatternPanel.Visible = true;
-            validatePanel.Visible = false;
+            LoginForm login = new LoginForm();
+            login.Show();
+            this.Hide();
         }
 
-        private void validatePatternButton_Click(object sender, EventArgs e)
+        private void registerButton_Click(object sender, EventArgs e)
         {
-            savePatternPanel.Visible = false;
-            validatePanel.Visible = true;
+            RegisterForm register = new RegisterForm();
+            register.Show();
+            this.Hide();
         }
     }
 }
